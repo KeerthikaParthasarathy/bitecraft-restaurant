@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BITECRAFT | Our Menus</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased bg-[#FBF8F2] text-[#2F1D11] selection:bg-[#E59819] selection:text-white">
+
+  <!-- Navbar -->
+  <header class="sticky top-0 bg-[#FBF8F2]/95 backdrop-blur z-50 border-b border-[#521C0E]/10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl sm:text-3xl font-black tracking-widest text-[#521C0E]">BITECRAFT</a>
+      
+      <nav class="hidden lg:flex items-center space-x-8 text-sm font-bold text-[#521C0E]/80">
+        <a href="index.html" class="hover:text-[#B93815] transition">Home</a>
+        <a href="menu.html" class="text-[#B93815] border-b-2 border-[#B93815] pb-1">Menus</a>
+        <a href="about.html" class="hover:text-[#B93815] transition">About</a>
+        <a href="gallery.html" class="hover:text-[#B93815] transition">Gallery</a>
+        <a href="contact.html" class="hover:text-[#B93815] transition">Contact</a>
+      </nav>
+
+      <a href="contact.html" class="bg-[#E59819] hover:bg-[#cf860e] text-white px-6 py-2.5 rounded-full font-black text-xs tracking-wider shadow">
+        BOOK A TABLE
+      </a>
+    </div>
+  </header>
+
+  <!-- 1. Meal Categories Navigation Icons -->
+  <section class="max-w-7xl mx-auto px-6 py-12">
+    <div class="text-center mb-10" data-aos="fade-up" data-aos-duration="1000">
+      <h2 class="text-3xl font-black text-[#521C0E] uppercase tracking-wide">OUR MEAL MENUS</h2>
+      <div class="w-12 h-1 bg-[#E59819] mx-auto mt-2 rounded-full"></div>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
+      
+      <!-- Burger -->
+      <a href="dish-detail.html?id=classic-cheese" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100" class="group block cursor-pointer">
+        <div class="w-24 h-24 mx-auto rounded-full bg-white p-2 shadow-md border-2 border-transparent group-hover:border-[#E59819] transition">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=300&q=80" alt="Burger" class="w-full h-full object-cover rounded-full">
+        </div>
+        <span class="block mt-3 text-xs font-black uppercase text-[#521C0E] group-hover:text-[#B93815] transition">Burger</span>
+      </a>
+
+      <!-- Pizza -->
+      <a href="dish-detail.html?id=classic-cheese" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200" class="group block cursor-pointer">
+        <div class="w-24 h-24 mx-auto rounded-full bg-white p-2 shadow-md border-2 border-transparent group-hover:border-[#E59819] transition">
+          <img src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?auto=format&fit=crop&w=300&q=80" alt="Pizza" class="w-full h-full object-cover rounded-full">
+        </div>
+        <span class="block mt-3 text-xs font-black uppercase text-[#521C0E] group-hover:text-[#B93815] transition">Pizza</span>
+      </a>
+
+      <!-- Sandwich -->
+      <a href="dish-detail.html?id=supreme-roll" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300" class="group block cursor-pointer">
+        <div class="w-24 h-24 mx-auto rounded-full bg-white p-2 shadow-md border-2 border-transparent group-hover:border-[#E59819] transition">
+          <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=300&q=80" alt="Sandwich" class="w-full h-full object-cover rounded-full">
+        </div>
+        <span class="block mt-3 text-xs font-black uppercase text-[#521C0E] group-hover:text-[#B93815] transition">Sandwich</span>
+      </a>
+
+      <!-- Pasta -->
+      <a href="dish-detail.html?id=creamy-alfredo" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400" class="group block cursor-pointer">
+        <div class="w-24 h-24 mx-auto rounded-full bg-white p-2 shadow-md border-2 border-transparent group-hover:border-[#E59819] transition">
+          <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=300&q=80" alt="Pasta" class="w-full h-full object-cover rounded-full">
+        </div>
+        <span class="block mt-3 text-xs font-black uppercase text-[#521C0E] group-hover:text-[#B93815] transition">Pasta</span>
+      </a>
+
+      <!-- Desserts -->
+      <a href="dish-detail.html?id=classic-cheese" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500" class="group block cursor-pointer">
+        <div class="w-24 h-24 mx-auto rounded-full bg-white p-2 shadow-md border-2 border-transparent group-hover:border-[#E59819] transition">
+          <img src="https://images.unsplash.com/photo-1579372786545-d24232daf58c?auto=format&fit=crop&w=300&q=80" alt="Desserts" class="w-full h-full object-cover rounded-full">
+        </div>
+        <span class="block mt-3 text-xs font-black uppercase text-[#521C0E] group-hover:text-[#B93815] transition">Desserts</span>
+      </a>
+
+      <!-- Beverages -->
+      <a href="dish-detail.html?id=classic-cheese" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600" class="group block cursor-pointer">
+        <div class="w-24 h-24 mx-auto rounded-full bg-white p-2 shadow-md border-2 border-transparent group-hover:border-[#E59819] transition">
+          <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=300&q=80" alt="Beverages" class="w-full h-full object-cover rounded-full">
+        </div>
+        <span class="block mt-3 text-xs font-black uppercase text-[#521C0E] group-hover:text-[#B93815] transition">Beverages</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- 2. Chef's Special Picks (Click panna thani page-ku pogum) -->
+  <section class="max-w-7xl mx-auto px-6 py-12">
+    <div data-aos="zoom-in" data-aos-duration="1300" class="bg-[#521C0E] rounded-3xl p-6 sm:p-10 text-white shadow-2xl">
+      <div class="text-center mb-8">
+        <h2 class="text-2xl sm:text-3xl font-black uppercase tracking-wide">CHEF'S SPECIAL PICKS</h2>
+        <p class="text-xs text-gray-300 mt-1">Click on any card to view detailed ingredients and pricing</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        
+        <!-- Dish 1: Classic Cheese -->
+        <a href="dish-detail.html?id=classic-cheese" class="block bg-white text-[#2F1D11] rounded-2xl p-4 shadow-md dish-card group">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=80" class="w-full h-36 rounded-xl object-cover group-hover:scale-105 transition duration-500" alt="Classic Cheese">
+          <div class="mt-3 flex justify-between items-center">
+            <div>
+              <h4 class="font-bold text-xs uppercase group-hover:text-[#B93815] transition">Classic Cheese</h4>
+              <p class="text-xs text-gray-500 font-bold mt-0.5">$10.50</p>
+            </div>
+            <span class="w-8 h-8 bg-[#E59819] group-hover:bg-[#B93815] text-white rounded-full flex items-center justify-center font-bold text-xs transition">➔</span>
+          </div>
+        </a>
+
+        <!-- Dish 2: Supreme Roll -->
+        <a href="dish-detail.html?id=supreme-roll" class="block bg-white text-[#2F1D11] rounded-2xl p-4 shadow-md dish-card group">
+          <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=500&q=80" class="w-full h-36 rounded-xl object-cover group-hover:scale-105 transition duration-500" alt="Supreme Roll">
+          <div class="mt-3 flex justify-between items-center">
+            <div>
+              <h4 class="font-bold text-xs uppercase group-hover:text-[#B93815] transition">Supreme Roll</h4>
+              <p class="text-xs text-gray-500 font-bold mt-0.5">$12.50</p>
+            </div>
+            <span class="w-8 h-8 bg-[#E59819] group-hover:bg-[#B93815] text-white rounded-full flex items-center justify-center font-bold text-xs transition">➔</span>
+          </div>
+        </a>
+
+        <!-- Dish 3: Honey Garlic -->
+        <a href="dish-detail.html?id=honey-garlic" class="block bg-white text-[#2F1D11] rounded-2xl p-4 shadow-md dish-card group">
+          <img src="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=500&q=80" class="w-full h-36 rounded-xl object-cover group-hover:scale-105 transition duration-500" alt="Honey Garlic Chicken">
+          <div class="mt-3 flex justify-between items-center">
+            <div>
+              <h4 class="font-bold text-xs uppercase group-hover:text-[#B93815] transition">Honey Garlic</h4>
+              <p class="text-xs text-gray-500 font-bold mt-0.5">$14.99</p>
+            </div>
+            <span class="w-8 h-8 bg-[#E59819] group-hover:bg-[#B93815] text-white rounded-full flex items-center justify-center font-bold text-xs transition">➔</span>
+          </div>
+        </a>
+
+        <!-- Dish 4: Creamy Alfredo -->
+        <a href="dish-detail.html?id=creamy-alfredo" class="block bg-white text-[#2F1D11] rounded-2xl p-4 shadow-md dish-card group">
+          <img src="https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=500&q=80" class="w-full h-36 rounded-xl object-cover group-hover:scale-105 transition duration-500" alt="Creamy Alfredo Pasta">
+          <div class="mt-3 flex justify-between items-center">
+            <div>
+              <h4 class="font-bold text-xs uppercase group-hover:text-[#B93815] transition">Creamy Alfredo</h4>
+              <p class="text-xs text-gray-500 font-bold mt-0.5">$18.99</p>
+            </div>
+            <span class="w-8 h-8 bg-[#E59819] group-hover:bg-[#B93815] text-white rounded-full flex items-center justify-center font-bold text-xs transition">➔</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#521C0E] text-white py-10 mt-10">
+    <div class="max-w-7xl mx-auto px-6 text-center space-y-4">
+      <h3 class="text-3xl font-black tracking-widest text-[#E59819]">BITECRAFT</h3>
+      <p class="text-[11px] text-gray-400">© 2026 BITECRAFT. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true, easing: 'ease-out-cubic' });
+  </script>
+</body>
+</html>

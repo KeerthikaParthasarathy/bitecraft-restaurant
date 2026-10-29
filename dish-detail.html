@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BITECRAFT | Dish Details</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased bg-[#FBF8F2] text-[#2F1D11]">
+
+  <!-- Header -->
+  <header class="sticky top-0 bg-[#FBF8F2]/95 backdrop-blur z-50 border-b border-[#521C0E]/10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl sm:text-3xl font-black tracking-widest text-[#521C0E]">BITECRAFT</a>
+      
+      <nav class="hidden lg:flex items-center space-x-8 text-sm font-bold text-[#521C0E]/80">
+        <a href="index.html" class="hover:text-[#B93815] transition">Home</a>
+        <a href="menu.html" class="text-[#B93815] border-b-2 border-[#B93815] pb-1">Menus</a>
+        <a href="about.html" class="hover:text-[#B93815] transition">About</a>
+        <a href="gallery.html" class="hover:text-[#B93815] transition">Gallery</a>
+        <a href="contact.html" class="hover:text-[#B93815] transition">Contact</a>
+      </nav>
+
+      <a href="contact.html" class="bg-[#E59819] hover:bg-[#cf860e] text-white px-6 py-2.5 rounded-full font-black text-xs tracking-wider shadow">
+        BOOK A TABLE
+      </a>
+    </div>
+  </header>
+
+  <!-- Back Link -->
+  <div class="max-w-7xl mx-auto px-6 pt-8">
+    <a href="menu.html" class="inline-flex items-center gap-2 text-xs font-black uppercase tracking-wider text-[#521C0E] hover:text-[#B93815] transition">
+      ← Back to Menus
+    </a>
+  </div>
+
+  <!-- Single Dish Details Section -->
+  <main class="max-w-7xl mx-auto px-6 py-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- Left: Big High-Res Dish Image with Slow Slide-Right -->
+      <div data-aos="fade-right" data-aos-duration="1400" class="lg:col-span-6">
+        <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white">
+          <img id="dish-image" src="" alt="Dish Image" class="w-full h-[420px] sm:h-[480px] object-cover hover:scale-105 transition-transform duration-700 ease-out">
+          <span id="dish-badge" class="absolute top-4 left-4 bg-[#E59819] text-white font-black text-xs px-4 py-1.5 rounded-full uppercase tracking-wider shadow">
+            Signature
+          </span>
+        </div>
+      </div>
+
+      <!-- Right: Detailed Information with Slow Slide-Left -->
+      <div data-aos="fade-left" data-aos-duration="1400" data-aos-delay="200" class="lg:col-span-6 space-y-6">
+        <div>
+          <span id="dish-category" class="text-xs font-black uppercase tracking-widest text-[#B93815]">Category</span>
+          <h1 id="dish-title" class="text-3xl sm:text-5xl font-black text-[#521C0E] uppercase tracking-tight mt-1 leading-tight">
+            Dish Name
+          </h1>
+          <div class="flex items-center gap-4 mt-3">
+            <span id="dish-price" class="text-3xl font-black text-[#B93815]">$0.00</span>
+            <div class="text-[#E59819] text-sm">★★★★★ <span class="text-xs text-gray-500 font-medium">(4.9/5 from 240+ reviews)</span></div>
+          </div>
+        </div>
+
+        <p id="dish-desc" class="text-sm sm:text-base text-[#6C4E38] leading-relaxed">
+          Detailed recipe overview and taste breakdown will appear here.
+        </p>
+
+        <!-- Key Highlights -->
+        <div class="space-y-3 pt-2">
+          <h4 class="text-xs font-black uppercase tracking-wider text-[#521C0E]">Chef's Preparation Details</h4>
+          <div class="grid grid-cols-2 gap-3 text-xs font-bold text-[#521C0E]">
+            <div class="bg-white p-3.5 rounded-2xl shadow-sm border border-[#521C0E]/5">
+              ⏱️ <span class="ml-1">Prep: 15-20 Mins</span>
+            </div>
+            <div class="bg-white p-3.5 rounded-2xl shadow-sm border border-[#521C0E]/5">
+              🌿 <span class="ml-1">100% Farm Fresh</span>
+            </div>
+            <div class="bg-white p-3.5 rounded-2xl shadow-sm border border-[#521C0E]/5">
+              🔥 <span class="ml-1">Wood-Fire Finished</span>
+            </div>
+            <div class="bg-white p-3.5 rounded-2xl shadow-sm border border-[#521C0E]/5">
+              🧀 <span class="ml-1">House Crafted Sauces</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quantity & Order CTA -->
+        <div class="flex flex-wrap items-center gap-4 pt-4 border-t border-[#521C0E]/10">
+          <div class="flex items-center border border-gray-300 rounded-full bg-white px-3 py-2">
+            <button onclick="changeQty(-1)" class="px-2 font-bold text-[#521C0E] text-base hover:text-[#B93815]">-</button>
+            <span id="qty-count" class="px-4 text-xs font-black">1</span>
+            <button onclick="changeQty(1)" class="px-2 font-bold text-[#521C0E] text-base hover:text-[#B93815]">+</button>
+          </div>
+
+          <button onclick="alert('Added to your bag!')" class="bg-[#B93815] hover:bg-[#962a0e] text-white px-8 py-3 rounded-full font-black text-xs uppercase tracking-wider shadow-lg transition active:scale-95">
+            Add To Order
+          </button>
+          
+          <a href="contact.html" class="bg-[#521C0E] hover:bg-[#381208] text-white px-8 py-3 rounded-full font-black text-xs uppercase tracking-wider shadow-lg transition active:scale-95">
+            Book Table For This
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#521C0E] text-white py-10 mt-14">
+    <div class="max-w-7xl mx-auto px-6 text-center space-y-4">
+      <h3 class="text-3xl font-black tracking-widest text-[#E59819]">BITECRAFT</h3>
+      <p class="text-[11px] text-gray-400">© 2026 BITECRAFT. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true, easing: 'ease-out-cubic' });
+
+    // Dishes Database
+    const dishesData = {
+      'classic-cheese': {
+        title: 'Classic Cheese Burger',
+        category: 'Burgers & Grills',
+        price: '$10.50',
+        badge: 'Bestseller',
+        image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=80',
+        desc: 'Crafted with premium smashed double patties, rich melted artisan cheddar, crisp lettuce, farm-fresh pickles, and our signature slow-simmered house burger glaze on a toasted brioche bun.'
+      },
+      'supreme-roll': {
+        title: 'Supreme Gourmet Roll',
+        category: 'Rolls & Wraps',
+        price: '$12.50',
+        badge: 'Chef Special',
+        image: 'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=1000&q=80',
+        desc: 'Charred stone-grilled organic vegetables and marinated filling folded tightly into a delicate toasted wrap, seasoned with spicy chipotle drizzle and crushed herbal seasonings.'
+      },
+      'honey-garlic': {
+        title: 'Honey Garlic Wings',
+        category: 'Appetizers & Wings',
+        price: '$14.99',
+        badge: 'Crispy Favorite',
+        image: 'https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=1000&q=80',
+        desc: 'Deep-fired to crispy golden crunch, coated in wild blossom honey glaze infused with roasted garlic, cracked black pepper, and toasted white sesame seeds.'
+      },
+      'creamy-alfredo': {
+        title: 'Creamy Alfredo Pasta',
+        category: 'Italian Delicacy',
+        price: '$18.99',
+        badge: 'Master Creation',
+        image: 'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=1000&q=80',
+        desc: 'Al dente fettuccine spun gently in rich aged Parmesan, European unsalted butter, and whipped garlic cream, garnished with freshly hand-picked Italian parsley.'
+      }
+    };
+
+    // Parse URL parameter e.g., ?id=classic-cheese
+    const urlParams = new URLSearchParams(window.location.search);
+    const dishId = urlParams.get('id') || 'classic-cheese';
+    const dish = dishesData[dishId] || dishesData['classic-cheese'];
+
+    // Populate data into DOM
+    document.getElementById('dish-title').innerText = dish.title;
+    document.getElementById('dish-category').innerText = dish.category;
+    document.getElementById('dish-price').innerText = dish.price;
+    document.getElementById('dish-badge').innerText = dish.badge;
+    document.getElementById('dish-desc').innerText = dish.desc;
+    document.getElementById('dish-image').src = dish.image;
+    document.getElementById('dish-image').alt = dish.title;
+
+    // Quantity selector
+    let qty = 1;
+    function changeQty(amt) {
+      qty = Math.max(1, qty + amt);
+      document.getElementById('qty-count').innerText = qty;
+    }
+  </script>
+</body>
+</html>

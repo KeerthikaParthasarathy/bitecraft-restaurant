@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BITECRAFT | Flavor That Feels Like Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased selection:bg-[#E59819] selection:text-white bg-[#FBF8F2] text-[#2F1D11]">
+
+  <!-- Top Bar -->
+  <div class="bg-[#521C0E] text-[#F3E5D8] text-xs py-2 px-6">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center space-x-4">
+        <span>📞 +1 (234) 567-890</span>
+        <span>|</span>
+        <span>✉️ support@bitecraft.com</span>
+        <span>|</span>
+        <span>🕒 Mon-Sat: 10:00 AM - 10:00 PM</span>
+      </div>
+      <div class="space-x-4 text-xs font-bold">
+        <a href="#" class="hover:text-[#E59819]">IN</a>
+        <a href="#" class="hover:text-[#E59819]">FB</a>
+        <a href="#" class="hover:text-[#E59819]">IG</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="sticky top-0 bg-[#FBF8F2]/95 backdrop-blur z-50 border-b border-[#521C0E]/10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl sm:text-3xl font-black tracking-widest text-[#521C0E]">BITECRAFT</a>
+      
+      <nav class="hidden lg:flex items-center space-x-8 text-sm font-bold text-[#521C0E]/80">
+        <a href="index.html" class="text-[#B93815] border-b-2 border-[#B93815] pb-1">Home</a>
+        <a href="menu.html" class="hover:text-[#B93815] transition">Menus</a>
+        <a href="about.html" class="hover:text-[#B93815] transition">About</a>
+        <a href="gallery.html" class="hover:text-[#B93815] transition">Gallery</a>
+        <a href="contact.html" class="hover:text-[#B93815] transition">Contact</a>
+      </nav>
+
+      <a href="contact.html" class="bg-[#E59819] hover:bg-[#cf860e] text-white px-6 py-2.5 rounded-full font-black text-xs tracking-wider shadow">
+        BOOK A TABLE
+      </a>
+    </div>
+  </header>
+
+  <!-- Clear & Sharp Master Chef Hero Section -->
+  <section class="relative w-full min-h-[600px] lg:min-h-[680px] flex items-center bg-zinc-950 overflow-hidden">
+    <img 
+      src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=2000&q=85" 
+      alt="Master Chef tossing and preparing gourmet food" 
+      class="absolute inset-0 w-full h-full object-cover object-center brightness-90"
+    >
+    <!-- Subtle left gradient so text is readable while chef is clearly visible -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/45 to-transparent"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 py-16 w-full">
+      <div class="max-w-xl text-white space-y-6">
+        
+        <div data-aos="fade-down" data-aos-duration="1200" class="inline-flex items-center gap-2 bg-[#E59819]/30 border border-[#E59819] px-4 py-1.5 rounded-full text-xs font-bold text-[#E59819] tracking-wider uppercase backdrop-blur-sm">
+          ★ Authentic Hand-Crafted Taste
+        </div>
+
+        <h1 data-aos="fade-up" data-aos-duration="1400" data-aos-delay="200" class="text-4xl sm:text-6xl font-black leading-tight uppercase tracking-tight">
+          FLAVOR THAT <br><span class="text-[#E59819]">FEELS LIKE HOME.</span>
+        </h1>
+
+        <p data-aos="fade-up" data-aos-duration="1400" data-aos-delay="400" class="text-gray-200 text-sm sm:text-base leading-relaxed">
+          Freshly crafted meals, curated daily for unforgettable taste. Relish rustic brick-oven recipes made by master culinary chefs.
+        </p>
+
+        <div data-aos="fade-up" data-aos-duration="1400" data-aos-delay="600" class="flex gap-4 pt-3">
+          <a href="contact.html" class="bg-[#B93815] hover:bg-[#962a0e] text-white px-7 py-3 rounded-full font-bold text-xs uppercase tracking-wider shadow-lg transition">
+            Book a Table
+          </a>
+          <a href="menu.html" class="bg-black/50 hover:bg-white hover:text-black border border-white/70 text-white px-7 py-3 rounded-full font-bold text-xs uppercase tracking-wider transition">
+            View Menu
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlight Cards -->
+  <section class="max-w-7xl mx-auto px-6 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div data-aos="fade-up" data-aos-duration="1200" class="bg-white p-8 rounded-3xl shadow-sm border border-[#521C0E]/10">
+        <div class="text-3xl mb-3">🍕</div>
+        <h3 class="font-black text-[#521C0E] text-lg uppercase mb-2">Wood-Fired Pizza</h3>
+        <p class="text-xs sm:text-sm text-gray-600">Fresh sourdough bases baked at 450°C in traditional brick ovens.</p>
+      </div>
+
+      <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200" class="bg-[#521C0E] text-white p-8 rounded-3xl shadow-lg border-2 border-[#E59819]/40">
+        <div class="text-3xl mb-3">🍔</div>
+        <h3 class="font-black text-[#E59819] text-lg uppercase mb-2">Signature Burgers</h3>
+        <p class="text-xs sm:text-sm text-gray-200">Double smash patties, melted cheddar, and secret house-made sauce.</p>
+      </div>
+
+      <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400" class="bg-white p-8 rounded-3xl shadow-sm border border-[#521C0E]/10">
+        <div class="text-3xl mb-3">🥗</div>
+        <h3 class="font-black text-[#521C0E] text-lg uppercase mb-2">100% Fresh Daily</h3>
+        <p class="text-xs sm:text-sm text-gray-600">Locally sourced crisp vegetables and master chef recipes.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-[#521C0E] text-white py-10">
+    <div class="max-w-7xl mx-auto px-6 text-center space-y-4">
+      <h3 class="text-3xl font-black tracking-widest text-[#E59819]">BITECRAFT</h3>
+      <p class="text-[11px] text-gray-400">© 2026 BITECRAFT. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true, easing: 'ease-out-cubic' });
+  </script>
+</body>
+</html>
