@@ -147,6 +147,52 @@
       </form>
     </section>
 
+    <section id="offers" aria-labelledby="offers-title" aria-roledescription="carousel" class="relative isolate min-h-[640px] overflow-hidden bg-bite-espresso sm:min-h-[600px]">
+      <div class="absolute inset-0 -z-20 bg-black">
+        <img data-offer-background src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&amp;fit=crop&amp;w=2200&amp;q=85" alt="" class="absolute inset-0 h-full w-full object-cover opacity-100 transition-opacity duration-700" aria-hidden="true">
+        <img data-offer-background src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&amp;fit=crop&amp;w=2200&amp;q=85" alt="" class="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-700" aria-hidden="true">
+        <img data-offer-background src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=2200&amp;q=85" alt="" class="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-700" aria-hidden="true">
+      </div>
+      <div class="absolute inset-0 -z-10 bg-black/60"></div>
+      <div class="mx-auto flex min-h-[640px] max-w-7xl flex-col justify-center px-5 py-16 sm:min-h-[600px] sm:px-8 sm:py-20 lg:px-10">
+        <div class="mb-9 text-center">
+          <p class="mb-3 text-[10px] font-black uppercase tracking-[0.3em] text-bite-amber sm:text-xs">BESPOKE CURATIONS</p>
+          <h2 id="offers-title" class="font-display text-4xl font-medium text-white sm:text-5xl">Exclusively For You</h2>
+        </div>
+
+        <div class="relative mx-auto w-full max-w-3xl">
+          <article data-offer-slide aria-roledescription="slide" aria-label="1 of 3" class="relative rounded-3xl border border-bite-amber/30 bg-white/95 p-7 text-bite-espresso shadow-2xl backdrop-blur-md transition-opacity duration-700 sm:p-10">
+            <p class="text-[9px] font-bold uppercase tracking-[0.22em] text-bite-terracotta">A MOMENT TO REMEMBER</p>
+            <h3 class="mt-3 font-display text-2xl font-medium leading-tight text-bite-brown sm:text-3xl">Royal Retreat &amp; Candlelight Dining</h3>
+            <p class="mt-4 text-sm leading-7 text-bite-espresso/75">Free Chef's 5-Course Dinner with Plunge Pool Villa.</p>
+            <a href="#booking" class="mt-7 inline-flex rounded-full bg-bite-amber px-6 py-3 text-[10px] font-bold uppercase tracking-[0.14em] text-bite-espresso transition hover:bg-bite-terracotta hover:text-white">Discover This Offer</a>
+          </article>
+          <article data-offer-slide aria-roledescription="slide" aria-label="2 of 3" aria-hidden="true" inert class="pointer-events-none absolute inset-0 rounded-3xl border border-bite-amber/30 bg-white/95 p-7 text-bite-espresso opacity-0 shadow-2xl backdrop-blur-md transition-opacity duration-700 sm:p-10">
+            <p class="text-[9px] font-bold uppercase tracking-[0.22em] text-bite-terracotta">A RESTORATIVE ESCAPE</p>
+            <h3 class="mt-3 font-display text-2xl font-medium leading-tight text-bite-brown sm:text-3xl">Weekend Heritage Escape</h3>
+            <p class="mt-4 text-sm leading-7 text-bite-espresso/75">Complimentary Ayur-Veda Spa &amp; Breakfast for 2.</p>
+            <a href="#booking" class="mt-7 inline-flex rounded-full bg-bite-amber px-6 py-3 text-[10px] font-bold uppercase tracking-[0.14em] text-bite-espresso transition hover:bg-bite-terracotta hover:text-white">Discover This Offer</a>
+          </article>
+          <article data-offer-slide aria-roledescription="slide" aria-label="3 of 3" aria-hidden="true" inert class="pointer-events-none absolute inset-0 rounded-3xl border border-bite-amber/30 bg-white/95 p-7 text-bite-espresso opacity-0 shadow-2xl backdrop-blur-md transition-opacity duration-700 sm:p-10">
+            <p class="text-[9px] font-bold uppercase tracking-[0.22em] text-bite-terracotta">A TASTE OF THE EXTRAORDINARY</p>
+            <h3 class="mt-3 font-display text-2xl font-medium leading-tight text-bite-brown sm:text-3xl">Gastronomy Masterclass Stay</h3>
+            <p class="mt-4 text-sm leading-7 text-bite-espresso/75">Live flame cooking session with Executive Chef + Luxury Suite.</p>
+            <a href="#booking" class="mt-7 inline-flex rounded-full bg-bite-amber px-6 py-3 text-[10px] font-bold uppercase tracking-[0.14em] text-bite-espresso transition hover:bg-bite-terracotta hover:text-white">Discover This Offer</a>
+          </article>
+        </div>
+
+        <div class="mt-8 flex items-center justify-center gap-5">
+          <button type="button" data-offer-previous aria-label="Previous offer" class="flex h-11 w-11 items-center justify-center rounded-full border border-bite-amber/70 text-lg text-bite-amber transition hover:bg-bite-amber hover:text-bite-espresso focus:outline-none focus:ring-2 focus:ring-bite-amber">←</button>
+          <div class="flex items-center gap-3" aria-label="Choose an offer">
+            <button type="button" data-offer-dot="0" aria-label="Show offer 1" aria-current="true" class="h-2.5 w-2.5 rounded-full bg-bite-amber ring-2 ring-bite-amber/40 transition"></button>
+            <button type="button" data-offer-dot="1" aria-label="Show offer 2" aria-current="false" class="h-2.5 w-2.5 rounded-full bg-white/50 transition hover:bg-bite-amber"></button>
+            <button type="button" data-offer-dot="2" aria-label="Show offer 3" aria-current="false" class="h-2.5 w-2.5 rounded-full bg-white/50 transition hover:bg-bite-amber"></button>
+          </div>
+          <button type="button" data-offer-next aria-label="Next offer" class="flex h-11 w-11 items-center justify-center rounded-full border border-bite-amber/70 text-lg text-bite-amber transition hover:bg-bite-amber hover:text-bite-espresso focus:outline-none focus:ring-2 focus:ring-bite-amber">→</button>
+        </div>
+      </div>
+    </section>
+
     <section id="suites" aria-labelledby="suites-title" class="bg-bite-sand px-5 py-20 sm:px-8 sm:py-24 lg:px-10 lg:py-28">
       <div class="mx-auto max-w-7xl">
         <div class="mx-auto mb-12 max-w-3xl text-center sm:mb-16">
@@ -465,5 +511,40 @@
       </div>
     </div>
   </footer>
+  <script>
+    const offerSlides = Array.from(document.querySelectorAll('[data-offer-slide]'));
+    const offerBackgrounds = Array.from(document.querySelectorAll('[data-offer-background]'));
+    const offerDots = Array.from(document.querySelectorAll('[data-offer-dot]'));
+    let activeOffer = 0;
+
+    function showOffer(index) {
+      activeOffer = (index + offerSlides.length) % offerSlides.length;
+      offerSlides.forEach((slide, slideIndex) => {
+        const isActive = slideIndex === activeOffer;
+        slide.classList.toggle('opacity-0', !isActive);
+        slide.classList.toggle('pointer-events-none', !isActive);
+        slide.setAttribute('aria-hidden', String(!isActive));
+        slide.inert = !isActive;
+      });
+      offerBackgrounds.forEach((background, backgroundIndex) => {
+        background.classList.toggle('opacity-100', backgroundIndex === activeOffer);
+        background.classList.toggle('opacity-0', backgroundIndex !== activeOffer);
+      });
+      offerDots.forEach((dot, dotIndex) => {
+        const isActive = dotIndex === activeOffer;
+        dot.setAttribute('aria-current', String(isActive));
+        dot.classList.toggle('bg-bite-amber', isActive);
+        dot.classList.toggle('ring-2', isActive);
+        dot.classList.toggle('ring-bite-amber/40', isActive);
+        dot.classList.toggle('bg-white/50', !isActive);
+      });
+    }
+
+    document.querySelector('[data-offer-previous]').addEventListener('click', () => showOffer(activeOffer - 1));
+    document.querySelector('[data-offer-next]').addEventListener('click', () => showOffer(activeOffer + 1));
+    offerDots.forEach((dot) => {
+      dot.addEventListener('click', () => showOffer(Number(dot.dataset.offerDot)));
+    });
+  </script>
 </body>
 </html>
